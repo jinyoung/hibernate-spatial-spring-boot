@@ -25,3 +25,25 @@ spring:
 
 
 
+# spring:
+#   datasource:
+#     url: jdbc:h2:mem:demoh2gis
+#     driverClassName: org.h2.Driver
+#     username: sa
+#     password:
+
+#   jpa:
+#     database-platform: org.hibernate.spatial.dialect.h2geodb.GeoDBDialect
+#     hibernate:
+#       ddl-auto: create-drop
+
+
+#   h2:
+#     console:
+#       enabled: true
+#       settings:
+#         web-allow-others: true
+    
+
+#   main:
+#     allow-bean-definition-overriding: true

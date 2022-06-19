@@ -24,12 +24,40 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
             <version>2.1.6.RELEASE</version>
         </dependency>
-        <dependency>
+
+
+<!--h2 geo db -->
+
+<!-- <dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+    <version>1.4.190</version>
+    <scope>runtime</scope>
+</dependency>
+<dependency>
+          <groupId>org.opengeo</groupId>
+          <artifactId>geodb</artifactId>
+          <version>0.7</version>
+          <scope>runtime</scope>  
+</dependency>
+<dependency>
+    <groupId>org.orbisgis</groupId>
+    <artifactId>h2spatial-ext</artifactId>
+    <version>1.2.3</version>
+</dependency>
+
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-core</artifactId>
+    <version>2.5.2</version>
+</dependency> -->
+
+        <!--dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>test</scope>
             <version>1.4.199</version>
-        </dependency>
+        </dependency-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -61,6 +89,9 @@
             <artifactId>mariaDB4j</artifactId>
             <version>2.2.3</version>
         </dependency>
+
+
+
     </dependencies>
 
     <build>
@@ -86,4 +117,21 @@
         </plugins>
     </build>
 
+
+    <repositories>
+        <repository>
+        <id>osgeo</id>
+        <name>OSGeo Release Repository</name>
+        <url>https://repo.osgeo.org/repository/release/</url>
+        <snapshots><enabled>false</enabled></snapshots>
+        <releases><enabled>true</enabled></releases>
+        </repository>
+        <repository>
+        <id>osgeo-snapshot</id>
+        <name>OSGeo Snapshot Repository</name>
+        <url>https://repo.osgeo.org/repository/snapshot/</url>
+        <snapshots><enabled>true</enabled></snapshots>
+        <releases><enabled>false</enabled></releases>
+        </repository>
+      </repositories>
 </project>
